@@ -1,7 +1,10 @@
 import React from "react";
 import MessageForm from "./components/MessageForm.js";
 import MessageList from "./components/MessageList.js";
+import axios from "axios";
 import "./App.css";
+
+// TO LAUNCH THE FAKE API : // npm run mock-api
 
 class App extends React.Component {
   constructor(props) {
@@ -11,14 +14,31 @@ class App extends React.Component {
     };
   }
 
-  // Adds the message to the list of messages
-  addMessage = (content, visibility) => {
-    this.setState({
-      messages: [
-        { content: content, visibility: visibility },
-        ...this.state.messages
-      ]
-    });
+  componentDidMount() {
+    this.getAllMessages();
+  }
+
+  // Retrieves all the messsages
+  getAllMessages = () => {
+    let url = "http://localhost:3001/messages";
+    axios
+      .get(url)
+      .then(response => {
+        this.setState({
+          // .reverse() => reverses the order of the elements in the array
+          messages: response.data.reverse()
+        });
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  };
+
+  // Adds the new message to the list of messages
+  addMessage = async (content, visibility) => {
+    let url = "http://localhost:3001/messages";
+    await axios.post(url, { content: content, visibility: visibility });
+    this.getAllMessages();
   };
 
   render() {

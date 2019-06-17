@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing App Compoment with Enzyme renders without crashing 1`] = `ShallowWrapper {}`;

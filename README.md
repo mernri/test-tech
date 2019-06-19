@@ -3,19 +3,30 @@
 Une web app qui permet de publier un message (un champs texte + un champs "privé" ou "public") et d'afficher la liste des messages qui ont été publiés.
 
 Le projet a été créé avec create-react-app.
+Une fausse API a été créée à l'aide du module npm [json-server](https://www.npmjs.com/package/json-server).
 
-### `npm start`
+## Instructions pour tester l'app
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to see it in the browser.
+### 1/ Télécharger le contenu du repo et installer les dépendances 
+~~~~
+git clone https://github.com/mernri/test-tech.git
+cd test-tech
+npm install
+~~~~
 
-### `npm run mock-api`
+### 2/ Exécuter l'application en mode développement 
+~~~~
+npm start
+npm run mock-api
+~~~~
 
-To run the server
-Open [http://localhost:3001](http://localhost:3001) to see the JSON in the browser.
 
-### `npm test`
+L'app est accessible à l'adresse suivante : [http://localhost:3000](http://localhost:3000) 
+le JSON est accessible à l'adresse suivante : [http://localhost:3001](http://localhost:3001) 
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### 3/ Exécuter les tests 
+```
+npm test
+```
+

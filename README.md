@@ -27,7 +27,7 @@ npm run mock-api
 
 L'app est accessible à l'adresse suivante : [http://localhost:3000](http://localhost:3000).
 
-Le JSON est accessible à l'adresse suivante : [http://localhost:3001](http://localhost:3001) 
+Le JSON est accessible à l'adresse suivante : [http://localhost:3001/messages](http://localhost:3001/messages) 
 
 
 ### 3/ Exécuter les tests 

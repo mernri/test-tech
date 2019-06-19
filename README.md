@@ -29,4 +29,3 @@ le JSON est accessible à l'adresse suivante : [http://localhost:3001](http://lo
 ```
 npm test
 ```
-

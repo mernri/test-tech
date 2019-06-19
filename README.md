@@ -2,6 +2,8 @@
 
 Une web app qui permet de publier un message (un champs texte + un champs "privé" ou "public") et d'afficher la liste des messages qui ont été publiés.
 
+![web app](https://i.ibb.co/N6HPdTc/Capture-d-e-cran-2019-06-19-a-12-17-29.png)
+
 Le projet a été créé avec create-react-app.
 Une fausse API a été créée à l'aide du module npm [json-server](https://www.npmjs.com/package/json-server).
 

@@ -1,24 +1,19 @@
 {
   "messages": [
     {
-      "id": 1,
-      "content": "coucou",
-      "visibility": "privé"
-    },
-    {
-      "id": 2,
-      "content": "ça va ?",
-      "visibility": "public"
-    },
-    {
-      "id": 3,
-      "content": "C'est SO API CENTRIC",
-      "visibility": "public"
-    },
-    {
       "content": "Petit test à la cool",
+      "visibility": "public",
+      "id": 1
+    },
+    {
+      "content": "Bonjouuuuuur !",
       "visibility": "privé",
-      "id": 4
+      "id": 2
+    },
+    {
+      "content": "SO API CENTRIC !",
+      "visibility": "public",
+      "id": 3
     }
   ]
 }

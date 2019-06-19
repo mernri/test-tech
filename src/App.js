@@ -4,8 +4,6 @@ import MessageList from "./components/MessageList.js";
 import axios from "axios";
 import "./App.css";
 
-// TO LAUNCH THE FAKE API : // npm run mock-api
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -25,7 +23,6 @@ class App extends React.Component {
       .get(url)
       .then(response => {
         this.setState({
-          // .reverse() => reverses the order of the elements in the array
           messages: response.data.reverse()
         });
       })

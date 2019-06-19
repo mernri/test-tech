@@ -5,6 +5,8 @@ Une web app qui permet de publier un message (un champs texte + un champs "priv�
 Le projet a été créé avec create-react-app.
 Une fausse API a été créée à l'aide du module npm [json-server](https://www.npmjs.com/package/json-server).
 
+Les frameworks de tests utilisés sont [Jest](https://jestjs.io/r) et [Enzyme](https://airbnb.io/enzyme/).
+
 ## Instructions pour tester l'app
 
 ### 1/ Télécharger le contenu du repo et installer les dépendances 
@@ -21,8 +23,9 @@ npm run mock-api
 ~~~~
 
 
-L'app est accessible à l'adresse suivante : [http://localhost:3000](http://localhost:3000) 
-le JSON est accessible à l'adresse suivante : [http://localhost:3001](http://localhost:3001) 
+L'app est accessible à l'adresse suivante : [http://localhost:3000](http://localhost:3000).
+
+Le JSON est accessible à l'adresse suivante : [http://localhost:3001](http://localhost:3001) 
 
 
 ### 3/ Exécuter les tests 
